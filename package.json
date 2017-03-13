@@ -1,0 +1,25 @@
+{
+  "name": "w12d1-tictactoe",
+  "version": "1.0.0",
+  "description": "Command Line Tic-Tac-Toe app as an exercise",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sscchan/W12D1-TicTacToe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sscchan/W12D1-TicTacToe/issues"
+  },
+  "homepage": "https://github.com/sscchan/W12D1-TicTacToe#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "prompt": "^1.0.0"
+  }
+}
