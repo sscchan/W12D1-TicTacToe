@@ -1,37 +1,41 @@
-export default Board {
+class Board {
   constructor(sizeX, sizeY) {
 
     this.sizeX = sizeX;
     this.sizeY = sizeY;
 
     this.boardState = [];
-    this.reset();
 
+    this.reset.bind(this);
+    this.get.bind(this);
+    this.set.bind(this);
+
+    this.reset();
   }
 
   // This reset board's state array elements to empty string ""
-  reset = () => {
+  reset() {
     for (let i = 0; i < this.sizeX; i++) {
       for (let j = 0; j < this.sizeY; j++) {
-        this.boardState[i, j] = "";
+        this.boardState[i, j] = '';
       }
     }
   }
 
-  get = (x, y) => {
+  get(x, y) {
     return this.boardState[x, y];
   }
 
   // Set a particular position of the board with a symbol
-  set = (x, y, symbol) => {
-    if (this.get(x,y) === '') {
-      this.boardState[x ,y] = symbol;
+  set(x, y, symbol) {
+    if (this.get(x, y) === '') {
+      this.boardState[x, y] = symbol;
     } else {
       // throw error
     }
   }
 
-  getRenderedBoard = () => {
+  getRenderedBoard() {
     let renderedBoardText = '';
 
     for (let i = 0; i < this.sizeX; i++) {
@@ -39,3 +43,5 @@ export default Board {
     }
   }
 }
+
+module.exports = Board;
