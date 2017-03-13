@@ -1,12 +1,14 @@
-import prompt from 'prompt';
+const prompt = require('prompt');
 
-export default class Player {
+class Player {
   constructor(name, symbol) {
-   this.name = name;
-   this.symbol = symbol; 
+    this.name = name;
+    this.symbol = symbol; 
   }
 
   getMove() {
     // Prompt user for the next move
   }
 }
+
+module.exports = Player;
